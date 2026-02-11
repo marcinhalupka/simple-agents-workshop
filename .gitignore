@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # Virtual environments
-agents-venv/
+agents/
 .env
 .venv/
 venv/

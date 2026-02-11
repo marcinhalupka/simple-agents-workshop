@@ -142,6 +142,9 @@ def run_cli(max_steps: int = 5) -> None:
             if state.get("action") == "answer":
                 break
 
+        # Debug: inspect which tool calls actually occurred in this run.
+        print("DEBUG tool_calls:", state.get("tool_calls"))
+
         answer = state.get("answer") or "(no answer produced)"
         print(f"agent> {answer}\n")
 
